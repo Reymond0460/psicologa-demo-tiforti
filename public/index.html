@@ -3,118 +3,173 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vanessa Cuadra · Psicóloga</title>
-<meta name="description" content="Psicoterapia como un lugar para detenerse, cuestionar y entender lo que nos pasa. Agenda tu sesión con Vanessa Cuadra.">
-<meta name="theme-color" content="#14110d">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='16' fill='%2314110d'/><text x='16' y='22' font-size='18' text-anchor='middle' fill='%23d9a55b' font-family='serif' font-style='italic'>V</text></svg>">
+<title>Psicóloga online y presencial · Agenda tu primera sesión</title>
+<meta name="description" content="Psicoterapia individual con enfoque integral. Agenda tu primera sesión de orientación por WhatsApp o formulario.">
+<meta name="theme-color" content="#1f4d4a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231f4d4a'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%23f6f3ee' font-family='serif' font-style='italic'>V</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="demo-bar">Demo de propuesta de sitio web · contenido ilustrativo</div>
+<div class="topbar">
+  <span>Propuesta de sitio web · contenido ilustrativo</span>
+  <a href="#" data-wa>WhatsApp: +51 900 000 000</a>
+</div>
 
 <header class="nav">
-  <a href="#inicio" class="brand">Vanessa <em>Cuadra</em></a>
-  <nav>
-    <a href="#persona">La persona</a>
-    <a href="#terapia">Psicoterapia</a>
-    <a href="#encuentro">Encuentro</a>
-    <a href="#agenda" class="btn btn-sm">Agenda</a>
+  <a href="#inicio" class="brand">Vanessa <em>Cuadra</em><small>Psicóloga</small></a>
+  <nav id="menu">
+    <a href="#motivos">¿Cuándo consultar?</a>
+    <a href="#enfoque">Enfoque</a>
+    <a href="#proceso">Cómo funciona</a>
+    <a href="#faq">Preguntas</a>
+    <a href="#agenda" class="btn btn-sm">Agenda tu sesión</a>
   </nav>
 </header>
 
 <main>
 <section class="hero" id="inicio">
-  <div class="hero-text reveal">
-    <p class="eyebrow">Psicóloga · Psicoterapia individual</p>
-    <h1>Observando el mundo y a las personas <em>desde que tengo memoria.</em></h1>
-    <p class="lead">Un espacio para detenerte, cuestionar y entender lo que te pasa, sin prisa y sin etiquetas apuradas.</p>
+  <div class="hero-copy">
+    <p class="tag">Psicoterapia individual · Online y presencial</p>
+    <h1>Un espacio seguro para <em>entender lo que sientes</em> y volver a elegir tu rumbo</h1>
+    <p class="lead">Terapia cercana, sin juicios y con mirada integral de la persona. Da el primer paso con una sesión de orientación.</p>
+    <ul class="checks">
+      <li>Primera sesión de orientación</li>
+      <li>Confidencialidad y trato humano</li>
+      <li>Horarios flexibles, también online</li>
+    </ul>
     <div class="cta">
-      <a href="#agenda" class="btn">Agenda tu sesión</a>
-      <a href="#terapia" class="btn btn-ghost">Cómo trabajo</a>
+      <a href="#" data-wa class="btn btn-wa">Escríbeme por WhatsApp</a>
+      <a href="#proceso" class="btn btn-ghost">Cómo funciona</a>
     </div>
-    <p class="aside">Psicóloga desde hace menos.</p>
   </div>
-  <div class="hero-art reveal" aria-hidden="true">
-    <div class="orb"></div>
-    <svg viewBox="0 0 200 200" class="rings"><circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="70"/><circle cx="100" cy="100" r="44"/></svg>
-    <p class="quote">“¿Quién eres?”<span>la incógnita de siempre</span></p>
-  </div>
+
+  <form id="form" class="card form" novalidate>
+    <h2>Agenda tu primera sesión</h2>
+    <p>Te respondo en el día para coordinar horario.</p>
+    <label>Nombre<input name="nombre" required autocomplete="name" placeholder="Tu nombre"></label>
+    <label>Teléfono<input name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="+51 ..."></label>
+    <label>Motivo de consulta
+      <select name="motivo">
+        <option>Ansiedad o estrés</option><option>Ánimo bajo o tristeza</option><option>Relaciones y vínculos</option>
+        <option>Duelo o pérdidas</option><option>Autoestima e identidad</option><option>Sentido y propósito</option><option>Otro</option>
+      </select>
+    </label>
+    <label>Modalidad
+      <select name="modalidad"><option>Online</option><option>Presencial</option><option>Aún no lo sé</option></select>
+    </label>
+    <button class="btn btn-cta" type="submit">Solicitar sesión</button>
+    <p class="tiny">Se abre WhatsApp con tu mensaje listo. Tus datos no se guardan en esta demo.</p>
+  </form>
 </section>
 
-<section class="section" id="persona">
+<section class="strip">
+  <div><b>Online y presencial</b><span>Donde te sientas más cómoda o cómodo</span></div>
+  <div><b>Confidencial</b><span>Tu proceso es privado</span></div>
+  <div><b>Enfoque integral</b><span>Cuerpo, mente, vínculos y sentido</span></div>
+  <div><b>Respuesta ágil</b><span>Por WhatsApp o formulario</span></div>
+</section>
+
+<section class="section" id="motivos">
   <div class="wrap">
-    <p class="eyebrow">La persona</p>
-    <h2>Un ser integral que se expresa en <em>múltiples dimensiones</em></h2>
-    <p class="sub">No trabajo con síntomas aislados. Miro a la persona completa y los lugares desde donde se manifiesta.</p>
-    <div class="dims">
-      <article class="dim reveal"><span>01</span><h3>Corporal</h3><p>Habitar el cuerpo. Lo que sentimos antes de poder nombrarlo.</p></article>
-      <article class="dim reveal"><span>02</span><h3>Psicológica</h3><p>Mundo interior: pensamientos, emociones, historia personal.</p></article>
-      <article class="dim reveal"><span>03</span><h3>Relacional</h3><p>Encuentro con otros: vínculos, apego, soledad y pertenencia.</p></article>
-      <article class="dim reveal"><span>04</span><h3>Existencial</h3><p>Elegir y responder: sentido, decisiones y libertad.</p></article>
-      <article class="dim reveal"><span>05</span><h3>Espiritual</h3><p>Apertura al sentido, a lo que nos trasciende.</p></article>
+    <p class="tag">¿Cuándo consultar?</p>
+    <h2>No necesitas estar en crisis para pedir ayuda</h2>
+    <p class="sub">Estos son algunos motivos frecuentes de consulta.</p>
+    <div class="grid">
+      <article class="item"><i>01</i><h3>Ansiedad y estrés</h3><p>Preocupación constante, tensión, dificultad para descansar.</p></article>
+      <article class="item"><i>02</i><h3>Ánimo bajo</h3><p>Desgano, tristeza o sensación de vacío que no se va.</p></article>
+      <article class="item"><i>03</i><h3>Relaciones y vínculos</h3><p>Conflictos de pareja, familia, soledad o dependencia.</p></article>
+      <article class="item"><i>04</i><h3>Duelo y pérdidas</h3><p>Acompañamiento ante cambios y despedidas difíciles.</p></article>
+      <article class="item"><i>05</i><h3>Autoestima e identidad</h3><p>Preguntarte quién eres y qué quieres para tu vida.</p></article>
+      <article class="item"><i>06</i><h3>Sentido y propósito</h3><p>Cuando todo "va bien" pero algo no encaja.</p></article>
     </div>
+    <p class="center"><a href="#agenda" class="btn btn-cta">Quiero agendar</a></p>
   </div>
 </section>
 
-<section class="section alt" id="terapia">
+<section class="section soft" id="enfoque">
   <div class="wrap split">
-    <div class="reveal">
-      <p class="eyebrow">Así entiendo mi trabajo como psicóloga</p>
-      <h2>Cómo entiendo <em>la psicoterapia</em></h2>
-      <p>La terapia no es una carrera hacia sentirse bien ni un diagnóstico para cargar. Es un proceso de conocerse con honestidad, acompañado, a un ritmo que se pueda sostener.</p>
-      <p class="note">Modalidad, enfoque y formación se detallarán con la información real de Vanessa.</p>
+    <div>
+      <p class="tag">Enfoque</p>
+      <h2>Una mirada a la <em>persona completa</em></h2>
+      <p>Un ser integral se expresa en múltiples dimensiones. En terapia exploramos cada una, a tu ritmo, para que el cambio sea real y sostenible.</p>
     </div>
+    <ul class="dims">
+      <li><b>Corporal</b><span>Habitar el cuerpo</span></li>
+      <li><b>Psicológica</b><span>Mundo interior</span></li>
+      <li><b>Relacional</b><span>Encuentro con otros</span></li>
+      <li><b>Existencial</b><span>Elegir y responder</span></li>
+      <li><b>Espiritual</b><span>Apertura al sentido</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="proceso">
+  <div class="wrap">
+    <p class="tag">Cómo funciona</p>
+    <h2>Empezar es simple</h2>
     <ol class="steps">
-      <li class="reveal"><b>Escuchar</b><span>Primero comprender tu historia y lo que te trae hoy.</span></li>
-      <li class="reveal"><b>Cuestionar</b><span>Revisar con cuidado lo que damos por sentado de nosotros.</span></li>
-      <li class="reveal"><b>Comprender</b><span>Dar forma y sentido a lo vivido para poder elegir.</span></li>
-      <li class="reveal"><b>Transformar</b><span>Llevar lo comprendido a la vida cotidiana.</span></li>
+      <li><b>Me escribes</b><span>Por WhatsApp o con el formulario, cuéntame brevemente qué te trae.</span></li>
+      <li><b>Sesión de orientación</b><span>Nos conocemos, aclaramos tu objetivo y definimos si trabajamos juntas o juntos.</span></li>
+      <li><b>Proceso terapéutico</b><span>Sesiones regulares, con un plan claro y acompañamiento cercano.</span></li>
     </ol>
   </div>
 </section>
 
-<section class="section" id="encuentro">
-  <div class="wrap">
-    <p class="eyebrow">Encuentro</p>
-    <h2>Un lugar para detenerse, <em>cuestionar y entender</em> lo que pasa</h2>
-    <p class="sub">Reflexiones sobre cultura digital, vínculos reales, identidad y propósito, que también comparto en Instagram.</p>
-    <div class="cards">
-      <a class="card reveal" href="https://www.instagram.com/psicovanessac/" target="_blank" rel="noopener"><small>Reflexión</small><h3>¿No necesitas a nadie… o sí?</h3><p>Sobre autonomía, dependencia y el deseo de vínculo.</p></a>
-      <a class="card reveal" href="https://www.instagram.com/psicovanessac/" target="_blank" rel="noopener"><small>Video</small><h3>¿Quién eres?</h3><p>La incógnita de siempre y por qué vale la pena sostenerla.</p></a>
-      <a class="card reveal" href="https://www.instagram.com/psicovanessac/" target="_blank" rel="noopener"><small>Análisis</small><h3>Cultura digital y vínculos reales</h3><p>Perspectivas sobre la experiencia humana hoy.</p></a>
+<section class="section soft" id="sobre">
+  <div class="wrap split">
+    <div class="photo" role="img" aria-label="Espacio para fotografía de la psicóloga"><span>Foto profesional</span></div>
+    <div>
+      <p class="tag">Sobre mí</p>
+      <h2>Vanessa Cuadra, <em>psicóloga</em></h2>
+      <p>Observando el mundo y a las personas desde que tengo memoria. Mi trabajo es acompañarte a detenerte, cuestionar y entender lo que te pasa.</p>
+      <p class="note">Aquí irán formación, registro profesional y años de experiencia reales.</p>
+      <a class="btn btn-ghost dark" href="https://www.instagram.com/psicovanessac/" target="_blank" rel="noopener">Ver @psicovanessac</a>
     </div>
-    <p class="center"><a class="btn btn-ghost" href="https://www.instagram.com/psicovanessac/" target="_blank" rel="noopener">Seguir @psicovanessac</a></p>
   </div>
 </section>
 
-<section class="section alt" id="agenda">
-  <div class="wrap narrow">
-    <p class="eyebrow">Agenda tu sesión</p>
-    <h2>Da el primer paso, <em>aquí.</em></h2>
-    <p class="sub">Cuéntame brevemente qué te trae. Te responderé para coordinar horario y modalidad.</p>
-    <form id="form" class="form" novalidate>
-      <label>Nombre<input name="nombre" required autocomplete="name"></label>
-      <label>Edad<input name="edad" type="number" min="14" max="99" inputmode="numeric"></label>
-      <label>Modalidad
-        <select name="modalidad"><option>Online</option><option>Presencial</option><option>Aún no lo sé</option></select>
-      </label>
-      <label class="full">¿Qué te gustaría trabajar?<textarea name="motivo" rows="4" placeholder="Con tus palabras, sin presión."></textarea></label>
-      <button class="btn full" type="submit">Enviar por WhatsApp</button>
-      <p class="full tiny" id="msg">En esta demo el botón abre WhatsApp con tu mensaje listo. En la versión final se conecta al número real y al formulario de Vanessa.</p>
-    </form>
+<section class="section" id="testimonios">
+  <div class="wrap">
+    <p class="tag">Testimonios</p>
+    <h2>Lo que dicen quienes ya empezaron</h2>
+    <div class="grid three">
+      <blockquote>“Texto de ejemplo. Aquí irá un testimonio real, con autorización.”<cite>Paciente · ejemplo</cite></blockquote>
+      <blockquote>“Texto de ejemplo. Aquí irá un testimonio real, con autorización.”<cite>Paciente · ejemplo</cite></blockquote>
+      <blockquote>“Texto de ejemplo. Aquí irá un testimonio real, con autorización.”<cite>Paciente · ejemplo</cite></blockquote>
+    </div>
   </div>
+</section>
+
+<section class="section soft" id="faq">
+  <div class="wrap narrow">
+    <p class="tag">Preguntas frecuentes</p>
+    <h2>Resolvemos tus dudas</h2>
+    <details><summary>¿Cómo es la primera sesión?</summary><p>Es una conversación para conocernos, entender tu motivo de consulta y definir cómo trabajar.</p></details>
+    <details><summary>¿Las sesiones son online o presenciales?</summary><p>Ambas modalidades, según tu comodidad y disponibilidad.</p></details>
+    <details><summary>¿Cuánto dura y cada cuánto nos vemos?</summary><p>Se define contigo; usualmente sesiones semanales. (Dato por confirmar.)</p></details>
+    <details><summary>¿Es confidencial?</summary><p>Sí. Lo que conversamos está protegido por el secreto profesional.</p></details>
+    <details><summary>¿Cuál es el valor de la sesión?</summary><p>Se informa por WhatsApp. (Tarifas por confirmar.)</p></details>
+  </div>
+</section>
+
+<section class="final" id="agenda">
+  <h2>¿Lista o listo para dar el primer paso?</h2>
+  <p>Escríbeme hoy y coordinamos tu sesión de orientación.</p>
+  <a href="#" data-wa class="btn btn-cta">Agenda por WhatsApp</a>
 </section>
 </main>
 
 <footer>
   <p class="brand">Vanessa <em>Cuadra</em></p>
   <p>Psicóloga · <a href="https://www.instagram.com/psicovanessac/" target="_blank" rel="noopener">@psicovanessac</a></p>
-  <p class="tiny">La psicoterapia no sustituye la atención de urgencia. Si estás en crisis, contacta a los servicios de emergencia de tu localidad.</p>
-  <p class="tiny">Demo creada por Tiforti</p>
+  <p class="tiny">La psicoterapia no sustituye la atención de urgencia. En una crisis, contacta a los servicios de emergencia de tu localidad.</p>
+  <p class="tiny">Demo creada por Tiforti · <a href="v1/">ver versión oscura</a></p>
 </footer>
+
+<a href="#" data-wa class="float-wa" aria-label="Escribir por WhatsApp">WhatsApp</a>
 <script src="main.js"></script>
 </body>
 </html>
